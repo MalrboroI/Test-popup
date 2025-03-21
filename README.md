@@ -1,5 +1,7 @@
 Test fron U2C -- # React + TypeScript  + SCSS + Vite
 
+Deploy - https://prismatic-jalebi-7cc894.netlify.app/
+
 Running the project locally:
 - Running in yarn, and building in vite - yarn dev;
 - Building - yarn build.
