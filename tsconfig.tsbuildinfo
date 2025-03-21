@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/buttons/button.tsx","./src/components/buttons/closebtn.tsx","./src/components/globaltypes/globaltypes.tsx","./src/components/input/input.tsx","./src/components/modal/modal.tsx","./src/components/selector/selector.tsx","./src/globalcontext/context.tsx","./src/scripts/useform.tsx"],"version":"5.7.3"}

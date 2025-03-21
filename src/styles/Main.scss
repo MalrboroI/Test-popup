@@ -1,0 +1,40 @@
+@import "./Global/variables";
+@import "./Global/mixin";
+@import "./Global/fonts";
+
+// Импорт стилей компонентов
+@import "./Components/Buttons.scss";
+@import "./Components/Input.scss";
+@import "./Components/Modal.scss";
+@import "./Components/Selector.scss";
+
+// Глобальные стили
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.2;
+  font-family: "Lab Grotesque", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: $gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

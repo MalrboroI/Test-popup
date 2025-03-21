@@ -1,0 +1,133 @@
+.modalWrapper {
+  display: none;
+
+  &--open {
+    display: inline-block;
+  }
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-mask;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  box-sizing: border-box;
+  padding: 32px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  @include adaptive("mobile") {
+    border-radius: 0;
+    max-width: 100%;
+    height: 100vh;
+  }
+  @include adaptive("tab") {
+    border-radius: 20px;
+    max-width: 453px;
+    height: auto;
+  }
+
+  @include adaptive("desktop") {
+    border-radius: 30px;
+    width: 552px;
+    height: auto;
+  }
+}
+
+.modalTitle {
+  font-size: 28px;
+  font-family: "Lab Grotesque", sans-serif;
+  font-weight: 500;
+
+  @include adaptive("tab") {
+    font-size: 28px;
+    @include adaptive("desktop") {
+      font-size: 28px;
+    }
+  }
+}
+
+.formDescription {
+  margin-top: 6px;
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    color: $color-text;
+    margin: 0 0 8px 0;
+
+    @include adaptive("tab") {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.formInput {
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    font-family: "Lab Grotesque", sans-serif;
+    font-weight: 500;
+  }
+
+  @include adaptive("mobile") {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.durationItems {
+  margin-top: 16px;
+
+  span {
+    font-size: 14px;
+    margin-right: 26px;
+    line-height: 60px;
+    font-family: "Lab Grotesque", sans-serif;
+    font-weight: 500;
+
+    @include adaptive("mobile") {
+      margin: 8px 0 16px 0;
+    }
+  }
+}
+
+.periodMonth {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 38px;
+    line-height: 60px;
+  }
+}
+
+.result {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.emptyBlock {
+  @include adaptive("mobile") {
+    margin-top: 186px;
+  }
+}

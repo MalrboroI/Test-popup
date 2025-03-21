@@ -1,0 +1,33 @@
+.inputWrapper {
+    padding-bottom: 16px;
+}
+
+.input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid $color-gray;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border: 1px solid #000000;
+    }
+
+    &::placeholder {
+        color: $color-text;
+    }
+
+    &--error {
+        border: 1px solid $color-red;
+    }
+}
+
+.errorMessage {
+    font-size: 12px;
+    line-height: 12px;
+    height: 0px;
+    color: $color-red;
+    
+}
