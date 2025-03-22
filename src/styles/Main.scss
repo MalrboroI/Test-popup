@@ -18,6 +18,11 @@ html {
   line-height: 1.2;
   font-family: "Lab Grotesque", sans-serif;
   font-weight: normal;
+
+  @include adaptive("mobile") {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 body {
