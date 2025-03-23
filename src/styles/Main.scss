@@ -17,7 +17,7 @@
 html {
   line-height: 1.2;
   font-family: "Lab Grotesque", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 
   @include adaptive("mobile") {
     height: 100%;

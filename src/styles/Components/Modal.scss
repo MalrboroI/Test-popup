@@ -46,7 +46,6 @@
 
 .modalTitle {
   font-size: 28px;
-  font-family: "Lab Grotesque", sans-serif;
   font-weight: 500;
 
   @include adaptive("tab") {
@@ -78,7 +77,6 @@
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 8px;
-    font-family: "Lab Grotesque", sans-serif;
     font-weight: 500;
   }
 
@@ -98,7 +96,6 @@
     font-size: 14px;
     margin-right: 26px;
     line-height: 60px;
-    font-family: "Lab Grotesque", sans-serif;
     font-weight: 500;
 
     @include adaptive("mobile") {
@@ -113,7 +110,7 @@
   flex-direction: column;
 
   span {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     margin-right: 38px;
     line-height: 60px;

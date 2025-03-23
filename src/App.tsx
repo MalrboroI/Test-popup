@@ -78,7 +78,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="submit">
-            <Button variant="text" isSmall onClick={calculateResult}>
+            <Button variant="text" onClick={calculateResult}>
               Рассчитать
             </Button>
           </div>
